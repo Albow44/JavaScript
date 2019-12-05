@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="style.css">
+<body>
+
+<h1>What is your name?</h1>
+
+<button onclick="Userprompt()">Who are you?</button>
+
+<p id="welcome"></p>
+
+<script>
+    function Userprompt(){
+
+    var customerName = prompt("Please enter your name", "type name here");
+
+    if (customerName!= null) {
+
+        document.getElementById("welcome").innerHTML =
+
+        "Hello, " + customerName + "! Welcome to HELL!!";
+    }
+}
+</script>
+
+</head>
+</body>
+</html>
